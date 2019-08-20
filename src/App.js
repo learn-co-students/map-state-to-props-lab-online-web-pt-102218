@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import UserInput from './components/UserInput'
 import ConnectedUsers from './components/Users'
-import { connect } from 'react-redux';
+
 
 class App extends Component {
-  handleOnSubmit = (event) => {
-    event.preventDefault();
-    this.props.dispatch({type: 'ADD_USER', user: this.state})
-  }
+
 
   render() {
     
@@ -20,4 +17,4 @@ class App extends Component {
   }
 }
 
-export default connect()(App);
+export default (App);
